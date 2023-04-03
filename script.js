@@ -10,8 +10,8 @@ var promise = new Promise(function(resolve, reject) {
 		
 		if(!(ageVal && nameVal)) {
 			alert("Please enter valid details!");
-			return;
 		}
+		return;
 		if(ageVal < 18){
 			reject(`Oh sorry ${nameVal}. You aren't old enough.`);
 		} else {
